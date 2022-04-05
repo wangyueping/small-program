@@ -1,0 +1,17 @@
+function formatPhone(str) {
+    var phone;
+    phone === null ? '' : str
+    if (!str) return phone
+    if (str.length !== 11) return str
+    var phoneList = str.split('')
+    phoneList.splice(3, 0, '-')
+    phoneList.splice(8, 0, '-')
+    phone = phoneList.join('')
+
+    return phone
+}
+
+
+module.exports = {
+    formatPhone: formatPhone
+}

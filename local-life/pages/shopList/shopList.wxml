@@ -1,0 +1,19 @@
+<view class="shop-item" wx:for="{{shopList}}" wx:key="id">
+    <view class="shop-img">
+        <image src="{{item.images[0]}}" alt="" />
+    </view>
+    <view class="shop-info">
+        <view>{{item.name}}</view>
+        <!-- <view>{{item.phone}}</view> -->
+        <view>{{tools.formatPhone(item.phone)}}</view>
+        <view>{{item.address}}</view>
+        <view>营业时间：周一至周日08:30-22:30</view>
+    </view>
+</view>
+
+<view class="footer">
+    <text wx:if="{{isFinished}}">我是有底线的哦~~</text>
+    <text hidden="{{!isLoading}}">加载中...</text>
+</view>
+
+<wxs src="../../utils/shopList.wxs" module="tools"></wxs>

@@ -1,0 +1,14 @@
+<!-- 轮播图区域 -->
+<swiper indicator-dots circular autoplay>
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+        <image src="{{item.image}}"></image>
+    </swiper-item>
+</swiper>
+
+<!-- 九宫格区域 -->
+<view class="grid-list">
+    <navigator url="/pages/shopList/shopList?id={{item.id}}&name={{item.name}}" class="grid-item" wx:for="{{gridList}}" wx:key="id">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.name}}</text>
+    </navigator>
+</view>

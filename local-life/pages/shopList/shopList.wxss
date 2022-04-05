@@ -1,0 +1,39 @@
+/* pages/shopList/shopList.wxss */
+.shop-item {
+    display: flex;
+    padding: 15rpx;
+    margin: 15rpx;
+    border: 1px solid #efefef;
+    border-radius: 8rpx;
+    box-shadow: 8rpx 8rpx 15rpx rgba(0, 0, 0, .1);
+}
+
+.shop-img {
+    margin-right: 10rpx;
+}
+
+.shop-img image {
+    display: block;
+    width: 250rpx;
+    height: 250rpx;
+    border-radius: 8rpx;
+}
+
+.shop-info {
+    font-size: 24rpx;
+}
+
+.shop-info view:first-child {
+    font-weight: 700;
+}
+
+.shop-info view {
+    margin-bottom: 18rpx;
+}
+
+.footer {
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 24rpx;
+}
